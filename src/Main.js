@@ -3,10 +3,20 @@ import HornedBeast from './HornedBeast.js';
 
 class Main extends React.Component {
   render() {
+    let Beasts =[];
+    this.props.data.forEach((beast, i) => {
+      Beasts.push(
+        <HornedBeast
+          title={beast.title}
+          image_url={beast.image_url}
+          description={beast.description}
+          key={i}
+        />
+      )
+    })
     return (
         <main>
-          <HornedBeast title="Goat" imageURL="./imgs/pexels-ekaterina-bolovtsova-5263829.jpg" description="A Goat" />
-          <HornedBeast title="Hebridean Sheep" imageURL="./imgs/Hebridean_Sheep.jpg" description="A Hebridian Sheep"/>
+          {Beasts}
         </main>
     );
   }
