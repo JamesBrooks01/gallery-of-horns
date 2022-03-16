@@ -1,10 +1,18 @@
-article {
-  width: 20%;
-  border: 5px solid #81A851;
-  padding: 1vw;
-  margin-bottom: .5vw;
-  font-size: 1.25vw;
+/* article {
 }
 article img {
+} */
+
+.card {
+  width: 18%;
+  padding: 1vw;
+  margin-bottom: .5vw;
+  font-size: 1vw;
+  text-align: center;
+}
+.cardImg {
   width: 100%
+}
+.cardImg:hover{
+  cursor: pointer;
 }
