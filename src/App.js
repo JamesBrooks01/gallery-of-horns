@@ -3,6 +3,7 @@ import Header from './Header.js';
 import Main from './Main.js';
 import './App.css';
 import Footer from './Footer.js';
+import data from './data.json';
 
 
 class App extends React.Component {
@@ -10,7 +11,7 @@ class App extends React.Component {
     return (
       <>
         <Header/>
-        <Main/>
+        <Main data={data}/>
         <Footer/>
       </>
     );

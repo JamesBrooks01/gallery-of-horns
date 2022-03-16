@@ -1,0 +1,10 @@
+article {
+  width: 20%;
+  border: 5px solid #81A851;
+  padding: 1vw;
+  margin-bottom: .5vw;
+  font-size: 1.25vw;
+}
+article img {
+  width: 100%
+}
