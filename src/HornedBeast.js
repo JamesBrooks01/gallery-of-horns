@@ -18,7 +18,11 @@ class HornedBeast extends React.Component {
       <article>
        <h2>{this.props.title}</h2>
        <img src={this.props.image_url} alt={this.props.title} title={this.props.title} onClick={this.handleFavs}/>
-       <p>{this.state.favorites}❤️</p>
+       <p>
+        {this.state.favorites}
+       [// eslint-disable-next-line]
+        ❤️
+       </p>
        <p>{this.props.description}</p>
       </article>
     );
