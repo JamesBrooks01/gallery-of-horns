@@ -1,11 +1,11 @@
 import React from 'react';
+import data from './data.json';
 import Header from './Header.js';
 import Main from './Main.js';
-import './App.css';
 import Footer from './Footer.js';
-import data from './data.json';
-import Modal from 'react-bootstrap/Modal';
-import Image from 'react-bootstrap/Image';
+import SelectedBeast from './SelectedBeast.js';
+import './App.css';
+
 
 
 class App extends React.Component {
@@ -28,8 +28,6 @@ class App extends React.Component {
       beastDesc: beastDesc,
       image_url: image_url
     });
-    console.log(beastDesc);
-    console.log(image_url);
   };
   render() {
     return (
@@ -37,16 +35,7 @@ class App extends React.Component {
         <Header/>
         <Main data={data} displayModal={this.displayModal}/>
         <Footer/>
-        <Modal show={this.state.modalDisplay} onHide={this.hideModal} size={'xl'} className="Modal">
-          <Modal.Header closeButton>
-            <Modal.Title>
-              <Image src={this.state.image_url} fluid={true}></Image>
-            </Modal.Title>
-            <Modal.Body>
-              <h3>{this.state.beastDesc}</h3>
-            </Modal.Body>
-          </Modal.Header>
-        </Modal>
+        <SelectedBeast modalDisplay ={this.state.modalDisplay} hideModal={this.hideModal} image_url={this.state.image_url} beastDesc={this.state.beastDesc}/>
       </>
     );
   }
