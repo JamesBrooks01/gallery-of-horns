@@ -16,8 +16,6 @@ class HornedBeast extends React.Component {
   };
   handleDisplayModal = () => {
     this.props.displayModal(this.props.description, this.props.image_url);
-    console.log(this.props.description);
-    console.log(this.props.image_url);
   };
   handleClickEvents = () => {
     this.handleFavs();
