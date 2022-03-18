@@ -26,7 +26,7 @@ class HornedBeast extends React.Component {
       <Card className="card" bg='dark' border='primary'>
         <Card.Body>
             <Card.Title className='cardTitle' style={{fontSize:"1.5vw"}}>{this.props.title}</Card.Title>
-          <Card.Img className="cardImg" src={this.props.image_url} onClick={this.handleDisplayModal}/>
+          <Card.Img className="cardImg" src={this.props.image_url} onClick={this.handleClickEvents}/>
           <Card.Text>{this.state.favorites ? `${this.state.favorites}❤️`: ""}</Card.Text>
           <Card.Text>{this.props.description}</Card.Text>
         </Card.Body>
