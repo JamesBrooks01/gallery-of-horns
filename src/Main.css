@@ -1,5 +1,10 @@
-main {
+main:not(:first-child) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+form {
+  display: block;
+  width: 100%;
 }
