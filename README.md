@@ -2,7 +2,7 @@
 
 ## Day 02
 
-### Feature 1
+### Feature 01
 
 ---
 
@@ -12,7 +12,7 @@
 - Finish time: 3:40pm
 - Actual time needed to complete: 20 Minutes
 
-### Feature 2
+### Feature 02
 
 ---
 
@@ -22,7 +22,7 @@
 - Finish time: 3:52pm
 - Actual time needed to complete: 12 Minutes
 
-### Feature 3
+### Feature 03
 
 ---
 
@@ -45,3 +45,17 @@
 - Start time: 5:15pm
 - Finish time: 6:13pm
 - Actual time needed to complete: 58 Minutes
+
+---
+
+## Day 04
+
+### Feature 01
+
+---
+
+- Number and name of feature: Feature 1. Filter by Numbers of Horn
+- Estimate of time needed to complete: 60 Minutes
+- Start time: 3:40pm
+- Finish time: 7:00pm
+- Actual time needed to complete: 3 Hours
